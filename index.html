@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Force-Directed Graph</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
-<body>
-<script type="module">
+<h1>First html document</h1>
 
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+<!-- Add a bit of text -->
+<p>This is my first sentence</p>
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
+<!-- Add a svg shape. Note that the 'target' class is attributed to the circle -->
+<svg> 
+  <circle class="target" style="fill: #69b3a2" stroke="black" cx=50 cy=50 r=40></circle>
+</svg>
 
-</script>
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
